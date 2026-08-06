@@ -9,7 +9,6 @@ import { LyricPoolDrawer } from './components/LyricPoolDrawer';
 import { StickerPickerModal } from './components/StickerPickerModal';
 import { PresetModal } from './components/PresetModal';
 import { ExportModal } from './components/ExportModal';
-import { AudioPlayerModal } from './components/AudioPlayerModal';
 import { HelpModal } from './components/HelpModal';
 
 export default function App() {
@@ -42,7 +41,6 @@ export default function App() {
   const [isStickerOpen, setIsStickerOpen] = useState(false);
   const [isPresetsOpen, setIsPresetsOpen] = useState(false);
   const [isExportOpen, setIsExportOpen] = useState(false);
-  const [isAudioOpen, setIsAudioOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
 
@@ -330,7 +328,6 @@ export default function App() {
         currentBg={config.bgType}
         onChangeBg={handleBgTypeChange}
         onOpenPresets={() => setIsPresetsOpen(true)}
-        onOpenAudio={() => setIsAudioOpen(true)}
         onOpenHelp={() => setIsHelpOpen(true)}
         onClearCanvas={handleClearAll}
         onExportImage={handleExportImage}
@@ -393,11 +390,6 @@ export default function App() {
         canvasRef={canvasRef}
         poemTitle={config.poemTitle}
         bgType={config.bgType}
-      />
-
-      <AudioPlayerModal
-        isOpen={isAudioOpen}
-        onClose={() => setIsAudioOpen(false)}
       />
 
       <HelpModal
