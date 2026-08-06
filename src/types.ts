@@ -2,7 +2,7 @@ export interface LyricItem {
   id: string;
   text: string;      // 第三级：词语
   song: string;      // 第二级：歌名
-  category: string;  // 第一级：分类 (《陈婧霏》 | 《猩红》 | 2020前单曲 | 2020-2024单曲 | 2025后单曲)
+  category: string;  // 第一级：分类 (《陈婧霏》 | 《猩红》 | 2020前单曲 | 2020-2024单曲 | 2024后单曲)
   categoryId: string;
   mood?: 'romantic' | 'noir' | 'dream' | 'melancholy' | 'existential' | 'vintage';
   tag?: string;

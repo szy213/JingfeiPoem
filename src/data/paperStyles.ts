@@ -94,7 +94,7 @@ export const LINEN_PAPER_STYLES: PaperStyleConfig[] = [
   },
   {
     id: 'letter-white',
-    name: '信纸白',
+    name: '杏仁白',
     bgClass: 'bg-[#F1D5C7]',
     textClass: 'text-[#482D1F]',
     borderClass: 'border border-[#dfbfb1] shadow-sm',
@@ -105,7 +105,7 @@ export const LINEN_PAPER_STYLES: PaperStyleConfig[] = [
 export const KRAFT_PAPER_STYLES: PaperStyleConfig[] = [
   {
     id: 'orchid-purple',
-    name: '罗兰紫',
+    name: '丁香紫',
     bgClass: 'bg-[#AB80AE]',
     textClass: 'text-[#FFF8EF]',
     borderClass: 'border border-[#9a6f9d] shadow-sm',
@@ -129,7 +129,7 @@ export const KRAFT_PAPER_STYLES: PaperStyleConfig[] = [
   },
   {
     id: 'linen-brown',
-    name: '亚麻棕',
+    name: '琥珀棕',
     bgClass: 'bg-[#7D5347]',
     textClass: 'text-[#FFF6E6]',
     borderClass: 'border border-[#694338] shadow-sm',

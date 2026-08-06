@@ -27,7 +27,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
             <Sparkles className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
             <div>
               <b className="text-[#f4efe8]">选词拼贴：</b>
-              点击下方词库中的歌词词条即可贴到画纸上。手剪纸条自带随机倾角，呈现手作贴纸质感。
+              点击下方词库中的歌词词条即可贴到画纸上，光标会自动定位到选中的词条后。
             </div>
           </div>
 
@@ -35,7 +35,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
             <Shuffle className="w-4 h-4 text-[#e6c875] shrink-0 mt-0.5" />
             <div>
               <b className="text-[#f4efe8]">随机换一批：</b>
-              点击“换一批”按钮可以刷新词库，灵感碰撞源源不断。
+              点击“换一批”按钮可以刷新词库，或点击“灌溉灵感”抽取灵感。
             </div>
           </div>
 
@@ -43,7 +43,7 @@ export const HelpModal: React.FC<HelpModalProps> = ({ isOpen, onClose }) => {
             <CornerDownLeft className="w-4 h-4 text-[#c93c3c] shrink-0 mt-0.5" />
             <div>
               <b className="text-[#f4efe8]">换行与排版：</b>
-              点击“换行”创建新诗行。点击画布上的任意词条可切换词条纸质（旧报剪页、打字机、黑炭、胭脂红等）或微调位置。
+              点击“换行”创建新诗行。点击画布上的任意词条可切换词条纸质或微调位置。
             </div>
           </div>
 

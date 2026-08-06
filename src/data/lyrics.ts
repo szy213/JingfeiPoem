@@ -6,7 +6,7 @@ export const SONG_CATEGORIES: SongCategory[] = [
   { id: 'album_xh', title: '《猩红》', subtitle: 'Crimson', mood: 'noir' },
   { id: 'singles_pre2020', title: '2020前单曲', subtitle: 'Pre-2020 Singles', mood: 'vintage' },
   { id: 'singles_2020_2024', title: '2020-2024单曲', subtitle: '2020-2024 Era', mood: 'dream' },
-  { id: 'singles_post2025', title: '2025后单曲', subtitle: '2025+ Singles', mood: 'existential' },
+  { id: 'singles_post2024', title: '2024后单曲', subtitle: '2024+ Singles', mood: 'existential' },
 ];
 
 export const LYRICS_DATABASE: LyricItem[] = [
@@ -410,43 +410,43 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-tbzhx-7', text: '旅途', song: '她不再幻想', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // ==========================================
-  // 第一级：2025后单曲
+  // 第一级：2024后单曲
   // ==========================================
   // 我长期坠入梦乡
-  { id: 'post-wcqzrmx-1', text: '献祭', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-2', text: '挣脱这绳索', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-3', text: '潮湿的太阳', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-4', text: '切断', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-5', text: '乌鸦', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-6', text: '惊醒', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-7', text: '秋千', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-wcqzrmx-8', text: '在绽放', song: '我长期坠入梦乡', category: '2025后单曲', categoryId: 'singles_post2025' },
+  { id: 'post-wcqzrmx-1', text: '献祭', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-2', text: '挣脱这绳索', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-3', text: '潮湿的太阳', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-4', text: '切断', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-5', text: '乌鸦', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-6', text: '惊醒', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-7', text: '秋千', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-wcqzrmx-8', text: '在绽放', song: '我长期坠入梦乡', category: '2024后单曲', categoryId: 'singles_post2024' },
 
   // 岩中花述
-  { id: 'post-yzhs-1', text: '绽放', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-2', text: '岩石', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-3', text: '遇见', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-4', text: '柔软', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-5', text: '内心', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-6', text: '她的天堂', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-7', text: '创造', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-8', text: '遥望', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-yzhs-9', text: '美丽', song: '岩中花述', category: '2025后单曲', categoryId: 'singles_post2025' },
+  { id: 'post-yzhs-1', text: '绽放', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-2', text: '岩石', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-3', text: '遇见', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-4', text: '柔软', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-5', text: '内心', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-6', text: '她的天堂', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-7', text: '创造', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-8', text: '遥望', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-yzhs-9', text: '美丽', song: '岩中花述', category: '2024后单曲', categoryId: 'singles_post2024' },
 
   // 美力场
-  { id: 'post-mlc-1', text: '颈后', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-2', text: '发梢', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-3', text: '陆离光怪', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-4', text: '馥郁流淌', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-5', text: '磁场', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-6', text: '巨浪', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-7', text: '天使的翅膀', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-8', text: '情网', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-9', text: '嚣张', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-10', text: '流淌', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-11', text: '天地', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-12', text: '发烫', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
-  { id: 'post-mlc-13', text: '天地多宽广', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
+  { id: 'post-mlc-1', text: '颈后', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-2', text: '发梢', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-3', text: '陆离光怪', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-4', text: '馥郁流淌', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-5', text: '磁场', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-6', text: '巨浪', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-7', text: '天使的翅膀', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-8', text: '情网', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-9', text: '嚣张', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-10', text: '流淌', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-11', text: '天地', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-12', text: '发烫', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
+  { id: 'post-mlc-13', text: '天地多宽广', song: '美力场', category: '2024后单曲', categoryId: 'singles_post2024' },
 ];
 
 export const PRESET_POEMS = [
@@ -486,7 +486,7 @@ export const PRESET_POEMS = [
   },
   {
     title: '岩中花述',
-    songTheme: '2025后单曲',
+    songTheme: '2024后单曲',
     items: [
       { text: '潮湿的太阳', styleId: 'vintage-type' },
       { text: '在绽放', styleId: 'crimson-stamp' },

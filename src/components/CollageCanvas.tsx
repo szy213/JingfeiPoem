@@ -411,20 +411,6 @@ export const CollageCanvas: React.FC<CollageCanvasProps> = ({
                         {toTraditional(item.text)}
                       </span>
 
-                      {/* Quick Delete Badge on Selected */}
-                      {isSelected && (
-                        <button
-                          data-no-deselect="true"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            onRemoveItem(item.id);
-                          }}
-                          className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-[#c2410c] text-white text-[10px] font-bold flex items-center justify-center hover:bg-red-700 shadow z-50 export-hide"
-                          title="删除字条"
-                        >
-                          ×
-                        </button>
-                      )}
                     </div>
 
                     {/* Selected Item Floating Toolbar */}
