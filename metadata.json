@@ -1,0 +1,6 @@
+{
+  "name": "陈婧霏歌词拼贴诗",
+  "description": "适配手机端的陈婧霏歌词复古拼贴诗生成器，包含手作拼贴、多图层撕纸质感、随机词库、换行与高精度诗篇图片导出功能。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
