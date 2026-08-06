@@ -70,6 +70,12 @@ export const CollageCanvas: React.FC<CollageCanvasProps> = ({
   }, [currentIndex]);
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [isEditingAuthor, setIsEditingAuthor] = useState(false);
+  const [styleMenuOpen, setStyleMenuOpen] = useState(false);
+
+  // Close style menu when selection changes
+  React.useEffect(() => {
+    setStyleMenuOpen(false);
+  }, [selectedItemId]);
 
   const bgConfig = CANVAS_BG_CONFIGS[config.bgType];
 
@@ -465,30 +471,37 @@ export const CollageCanvas: React.FC<CollageCanvasProps> = ({
                         </button>
 
                         {/* Cycle Paper Cutout Style */}
-                        <div className="relative group/style">
+                        <div className="relative">
                           <button
-                            className="p-1.5 hover:bg-white/10 rounded text-[#e6c875] transition-colors flex items-center gap-0.5"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setStyleMenuOpen(!styleMenuOpen);
+                            }}
+                            className={`p-1.5 hover:bg-white/10 rounded transition-colors flex items-center gap-0.5 ${styleMenuOpen ? 'bg-white/10' : ''}`}
                             title="换字条质感"
                           >
-                            <Layers className="w-3.5 h-3.5" />
+                            <Layers className="w-3.5 h-3.5 text-[#e6c875]" />
                           </button>
 
-                          <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1 w-32 bg-[#2d2a26] border border-white/20 shadow-xl p-1 grid grid-cols-1 gap-0.5 hidden group-hover/style:block z-50">
-                            {getPaperStylesForTheme(config.bgType).map((ps) => (
-                              <button
-                                key={ps.id}
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  onUpdateItemStyle(item.id, ps.id);
-                                }}
-                                className={`w-full text-left px-2 py-1 text-[11px] font-serif-sc flex items-center justify-between ${
-                                  item.styleId === ps.id ? 'bg-white text-[#2d2a26] font-bold' : 'text-[#f2efea]/80 hover:bg-white/10'
-                                }`}
-                              >
-                                <span>{ps.name}</span>
-                              </button>
-                            ))}
-                          </div>
+                          {styleMenuOpen && (
+                            <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1 w-32 bg-[#2d2a26] border border-white/20 shadow-xl p-1 grid grid-cols-1 gap-0.5 z-50">
+                              {getPaperStylesForTheme(config.bgType).map((ps) => (
+                                <button
+                                  key={ps.id}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    onUpdateItemStyle(item.id, ps.id);
+                                    setStyleMenuOpen(false);
+                                  }}
+                                  className={`w-full text-left px-2 py-1 text-[11px] font-serif-sc flex items-center justify-between ${
+                                    item.styleId === ps.id ? 'bg-white text-[#2d2a26] font-bold' : 'text-[#f2efea]/80 hover:bg-white/10'
+                                  }`}
+                                >
+                                  <span>{ps.name}</span>
+                                </button>
+                              ))}
+                            </div>
+                          )}
                         </div>
 
                         {/* Delete */}
