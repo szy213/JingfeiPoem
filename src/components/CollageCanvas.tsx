@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { CollageItem, CanvasConfig, StickerItem, PaperStyleId } from '../types';
+import React, { useState, useRef, useCallback } from 'react';
+import { CollageItem, CanvasConfig, StickerItem, PaperStyleId, CanvasBgType } from '../types';
 import { PAPER_STYLES, CANVAS_BG_CONFIGS, getPaperStylesForTheme } from '../data/paperStyles';
 import { toTraditional } from '../utils/toTraditional';
-import { Trash2, MoveLeft, MoveRight, Layers, Tag, Plus, Edit2, Check, Feather, Scissors, Quote, Pin } from 'lucide-react';
+import { Trash2, MoveLeft, MoveRight, Layers, Tag, Plus, Edit2, Check, Feather, Scissors, Quote, Pin, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const THEME_ORDER: CanvasBgType[] = ['rose', 'linen', 'kraft'];
 
 interface CollageCanvasProps {
   items: CollageItem[];
@@ -18,6 +20,7 @@ interface CollageCanvasProps {
   onOpenStickerPicker: () => void;
   onRemoveSticker: (id: string) => void;
   onAddLineBreak: () => void;
+  onChangeBg: (bg: CanvasBgType) => void;
   canvasRef: React.RefObject<HTMLDivElement | null>;
 }
 
@@ -35,8 +38,36 @@ export const CollageCanvas: React.FC<CollageCanvasProps> = ({
   onOpenStickerPicker,
   onRemoveSticker,
   onAddLineBreak,
+  onChangeBg,
   canvasRef
 }) => {
+  const touchStartX = useRef(0);
+  const currentIndex = THEME_ORDER.indexOf(config.bgType);
+
+  const switchToPrev = () => {
+    const prevIndex = (currentIndex - 1 + THEME_ORDER.length) % THEME_ORDER.length;
+    onChangeBg(THEME_ORDER[prevIndex]);
+  };
+
+  const switchToNext = () => {
+    const nextIndex = (currentIndex + 1) % THEME_ORDER.length;
+    onChangeBg(THEME_ORDER[nextIndex]);
+  };
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    const diff = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(diff) > 60) {
+      if (diff > 0) {
+        switchToPrev();
+      } else {
+        switchToNext();
+      }
+    }
+  }, [currentIndex]);
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [isEditingAuthor, setIsEditingAuthor] = useState(false);
 
@@ -84,8 +115,35 @@ export const CollageCanvas: React.FC<CollageCanvasProps> = ({
   const lineCount = items.length === 0 ? 0 : lineBreakCount + 1;
 
   return (
-    <div className="w-full flex flex-col items-center justify-center py-4 sm:py-8 transition-all my-auto">
-      
+    <div
+      className="w-full flex flex-col items-center justify-center py-4 sm:py-8 transition-all my-auto"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      {/* Theme Switcher Bar */}
+      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-3 select-none">
+        <button
+          onClick={switchToPrev}
+          className="p-1 border border-[#2d2a26]/30 text-[#2d2a26]/60 hover:text-[#2d2a26] hover:border-[#2d2a26] rounded-full transition-colors"
+          title="上一个主题"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </button>
+        <div className="text-center">
+          <span className="font-serif-sc font-bold text-sm sm:text-base text-[#2d2a26]">
+            {CANVAS_BG_CONFIGS[config.bgType].name}
+          </span>
+        </div>
+        <button
+          onClick={switchToNext}
+          className="p-1 border border-[#2d2a26]/30 text-[#2d2a26]/60 hover:text-[#2d2a26] hover:border-[#2d2a26] rounded-full transition-colors"
+          title="下一个主题"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+      <p className="text-[10px] text-[#2d2a26]/40 font-serif-sc mb-3 -mt-1">← 左右滑动切换主题 →</p>
+
       {/* Canvas Paper Wrapper */}
       <div
         ref={canvasRef}

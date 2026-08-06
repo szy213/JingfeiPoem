@@ -325,8 +325,6 @@ export default function App() {
       
       {/* Top Zine Header */}
       <Header
-        currentBg={config.bgType}
-        onChangeBg={handleBgTypeChange}
         onOpenPresets={() => setIsPresetsOpen(true)}
         onOpenHelp={() => setIsHelpOpen(true)}
         onClearCanvas={handleClearAll}
@@ -350,6 +348,7 @@ export default function App() {
           onOpenStickerPicker={() => setIsStickerOpen(true)}
           onRemoveSticker={handleRemoveSticker}
           onAddLineBreak={handleAddLineBreak}
+          onChangeBg={handleBgTypeChange}
           canvasRef={canvasRef}
         />
       </main>

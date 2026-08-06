@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Sparkles, Music, Image as ImageIcon, RotateCcw, HelpCircle, Palette, BookmarkCheck, Play, Pause } from 'lucide-react';
-import { CanvasBgType } from '../types';
-import { CANVAS_BG_CONFIGS } from '../data/paperStyles';
+import { Sparkles, Music, Image as ImageIcon, HelpCircle, Play, Pause } from 'lucide-react';
 
 const songs = [
   { title: '猩红', file: '/猩红.mp3' },
@@ -10,8 +8,6 @@ const songs = [
 ];
 
 interface HeaderProps {
-  currentBg: CanvasBgType;
-  onChangeBg: (bg: CanvasBgType) => void;
   onOpenPresets: () => void;
   onOpenHelp: () => void;
   onClearCanvas: () => void;
@@ -20,8 +16,6 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  currentBg,
-  onChangeBg,
   onOpenPresets,
   onOpenHelp,
   onClearCanvas,
@@ -41,9 +35,12 @@ export const Header: React.FC<HeaderProps> = ({
     const timer = setTimeout(() => {
       if (audioRef.current) {
         audioRef.current.src = songs[2].file;
-        audioRef.current.play().catch(() => {});
-        setCurrentSongIndex(2);
-        setIsPlaying(true);
+        audioRef.current.play().then(() => {
+          setCurrentSongIndex(2);
+          setIsPlaying(true);
+        }).catch(() => {
+          // Autoplay blocked by browser, keep default state
+        });
       }
     }, delay);
     return () => clearTimeout(timer);
@@ -62,8 +59,12 @@ export const Header: React.FC<HeaderProps> = ({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isSongDropdownOpen]);
 
+  const isActuallyPlaying = () => {
+    return audioRef.current && !audioRef.current.paused;
+  };
+
   const handleMusicClick = () => {
-    if (isPlaying) {
+    if (isActuallyPlaying()) {
       audioRef.current?.pause();
       setIsPlaying(false);
       setIsSongDropdownOpen(false);
@@ -73,17 +74,18 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const selectSong = (index: number) => {
-    if (currentSongIndex === index && isPlaying) {
+    if (currentSongIndex === index && isActuallyPlaying()) {
       audioRef.current?.pause();
       setIsPlaying(false);
     } else {
       if (audioRef.current) {
         audioRef.current.src = songs[index].file;
         audioRef.current.load();
-        audioRef.current.play().catch(() => {});
+        audioRef.current.play().then(() => {
+          setCurrentSongIndex(index);
+          setIsPlaying(true);
+        }).catch(() => {});
       }
-      setCurrentSongIndex(index);
-      setIsPlaying(true);
     }
     setIsSongDropdownOpen(false);
   };
@@ -110,34 +112,6 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Action Controls with Editorial Borders */}
         <div className="flex items-center gap-1 sm:gap-2 shrink-0">
           
-          {/* Paper Texture Selector */}
-          <div className="relative group">
-            <button
-              className="px-2 py-1.5 sm:px-2.5 border border-[#2d2a26] text-xs uppercase tracking-wider font-serif-sc text-[#2d2a26] hover:bg-[#2d2a26] hover:text-white transition-colors flex items-center gap-1 whitespace-nowrap"
-              title="切换画纸"
-            >
-              <Palette className="w-3.5 h-3.5" />
-              <span className="text-[10px] sm:text-[11px] hidden xs:inline whitespace-nowrap">{CANVAS_BG_CONFIGS[currentBg].name}</span>
-            </button>
-            <div className="absolute right-0 top-full mt-1.5 w-36 bg-[#f2efea] border border-[#2d2a26] shadow-2xl p-1 hidden group-hover:block group-focus-within:block z-50">
-              <div className="text-[10px] text-[#2d2a26]/60 px-2 py-1 font-courier border-b border-[#2d2a26]/15 uppercase tracking-widest">
-                SELECT PAPER
-              </div>
-              {(Object.keys(CANVAS_BG_CONFIGS) as CanvasBgType[]).map((bgKey) => (
-                <button
-                  key={bgKey}
-                  onClick={() => onChangeBg(bgKey)}
-                  className={`w-full text-left px-2 py-1.5 text-xs font-serif-sc flex items-center justify-between transition-colors ${
-                    currentBg === bgKey ? 'bg-[#2d2a26] text-white font-bold' : 'text-[#2d2a26] hover:bg-[#e2ded6]'
-                  }`}
-                >
-                  <span>{CANVAS_BG_CONFIGS[bgKey].name}</span>
-                  {currentBg === bgKey && <span className="w-1.5 h-1.5 rounded-full bg-[#c2410c]"></span>}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* Audio Vibe */}
           <div className="relative group" ref={dropdownRef}>
             <audio ref={audioRef} onEnded={handleAudioEnded} preload="auto" />
