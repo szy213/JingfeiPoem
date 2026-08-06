@@ -21,6 +21,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'cjf-wdgd-5', text: '擦身而过', song: '我的孤独认出你的孤独', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-wdgd-6', text: '敏感不幸的神经', song: '我的孤独认出你的孤独', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-wdgd-7', text: '暴力', song: '我的孤独认出你的孤独', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-wdgd-8', text: '孤独', song: '我的孤独认出你的孤独', category: '《陈婧霏》', categoryId: 'album_cjf' },
 
   // 夏宫
   { id: 'cjf-xg-1', text: '浪漫多情', song: '夏宫', category: '《陈婧霏》', categoryId: 'album_cjf' },
@@ -31,6 +32,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'cjf-xg-6', text: '狂欢', song: '夏宫', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-xg-7', text: '享受黑暗', song: '夏宫', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-xg-8', text: '上世纪的', song: '夏宫', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-xg-9', text: '客厅', song: '夏宫', category: '《陈婧霏》', categoryId: 'album_cjf' },
 
   // 消亡史
   { id: 'cjf-xws-1', text: '沐浴', song: '消亡史', category: '《陈婧霏》', categoryId: 'album_cjf' },
@@ -76,6 +78,13 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'cjf-sl-6', text: '嘴唇', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-sl-7', text: '爱和欲望', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-sl-8', text: '高墙', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-9', text: '进入我', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-10', text: '躯壳', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-11', text: '熄灭蜡烛', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-12', text: '熊熊烈火', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-13', text: '尘世的梦幻想', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-14', text: '耗尽了目光', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-sl-15', text: '自由奢侈', song: '深蓝', category: '《陈婧霏》', categoryId: 'album_cjf' },
 
   // In Bloom
   { id: 'cjf-ib-1', text: 'blossom', song: 'In Bloom', category: '《陈婧霏》', categoryId: 'album_cjf' },
@@ -92,7 +101,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'cjf-www-3', text: '性感', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-www-4', text: '贪玩', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-www-5', text: '迷幻', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
-  { id: 'cjf-www-6', text: '我不怕孤单', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-www-6', text: '尽情地旋转', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-www-7', text: '一起玩', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-www-8', text: '我不怕孤单', song: '舞舞舞', category: '《陈婧霏》', categoryId: 'album_cjf' },
 
   // 人间指南
   { id: 'cjf-rjzn-1', text: '烟花般灿烂', song: '人间指南', category: '《陈婧霏》', categoryId: 'album_cjf' },
@@ -101,6 +112,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'cjf-rjzn-4', text: '谋杀麻烦', song: '人间指南', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-rjzn-5', text: '盲目', song: '人间指南', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-rjzn-6', text: '忙碌', song: '人间指南', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-rjzn-7', text: '美食榜单', song: '人间指南', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-rjzn-8', text: '黯淡', song: '人间指南', category: '《陈婧霏》', categoryId: 'album_cjf' },
 
   // 生活在别处
   { id: 'cjf-shbc-1', text: '吻', song: '生活在别处', category: '《陈婧霏》', categoryId: 'album_cjf' },
@@ -110,6 +123,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'cjf-shbc-5', text: '列车', song: '生活在别处', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-shbc-6', text: '重新复活', song: '生活在别处', category: '《陈婧霏》', categoryId: 'album_cjf' },
   { id: 'cjf-shbc-7', text: '旋律', song: '生活在别处', category: '《陈婧霏》', categoryId: 'album_cjf' },
+  { id: 'cjf-shbc-8', text: '褪色的小说', song: '生活在别处', category: '《陈婧霏》', categoryId: 'album_cjf' },
+
 
   // ==========================================
   // 第一级：《猩红》
@@ -124,6 +139,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-hxjc-7', text: '天涯', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-hxjc-8', text: '灵感', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-hxjc-9', text: '善待', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-hxjc-10', text: '反向的列车', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-hxjc-11', text: '红色头发', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-hxjc-12', text: '带我回家', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
 
   // 北海
   { id: 'xh-bh-1', text: '绿树', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
@@ -134,6 +152,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-bh-6', text: '绝美的光', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-bh-7', text: '昨日', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-bh-8', text: '散场', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-9', text: '直觉', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-10', text: '小船儿', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-11', text: '梦里的水乡', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
 
   // 沙漠一枝花
   { id: 'xh-smyzh-1', text: '社会的情趣', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
@@ -141,6 +162,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-smyzh-3', text: '快乐', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-smyzh-4', text: '床被', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-smyzh-5', text: '暧昧', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-smyzh-6', text: '一朵花', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-smyzh-7', text: '沙漠', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
 
   // 春宵苦短，少女快前进！
   { id: 'xh-cxkd-1', text: '白兰地', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
@@ -150,6 +173,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-cxkd-5', text: '梦境', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-cxkd-6', text: '电气的滑梯', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-cxkd-7', text: '起伏的四季', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-cxkd-8', text: '蒸汽的陷阱', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-cxkd-9', text: '掉进', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-cxkd-10', text: '行李', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
 
   // 禁色宝丽来
   { id: 'xh-jsblr-1', text: '崎岖', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
@@ -163,6 +189,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-jsblr-9', text: '裙下的', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-jsblr-10', text: '封锁', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-jsblr-11', text: '爱欲', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-jsblr-12', text: '惊心动魄', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
 
   // 演！演！演！
   { id: 'xh-yyy-1', text: '戏', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
@@ -173,6 +200,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-yyy-6', text: '存在', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-yyy-7', text: '野火', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-yyy-8', text: '镜中的自己', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-yyy-9', text: '戏', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-yyy-10', text: '性感', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-yyy-11', text: '悲观垫底', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
 
   // 诸多夏日后天鹅死去
   { id: 'xh-zdxrh-1', text: '天鹅', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
@@ -192,6 +222,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-tshx-6', text: '别离', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-tshx-7', text: '光晕', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-tshx-8', text: '结局', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-tshx-9', text: '褪色的幻想', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-tshx-10', text: '失焦在光晕', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-tshx-11', text: '梦', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
 
   // 自恋咒
   { id: 'xh-zlz-1', text: '是我', song: '自恋咒', category: '《猩红》', categoryId: 'album_xh' },
@@ -207,11 +240,11 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-zlz-11', text: '都留给我', song: '自恋咒', category: '《猩红》', categoryId: 'album_xh' },
 
   // 猩红
-  { id: 'xh-xh-1', text: '猩纯的红', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-xh-1', text: '炽热的红', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-2', text: '霓虹', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-3', text: '肉体', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-4', text: '湮没', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-xh-5', text: '奶油', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-xh-5', text: '奶油的香浓', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-6', text: '中和', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-7', text: 'truth', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-8', text: 'fiction', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
@@ -219,6 +252,10 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-xh-10', text: '狂喜的风', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-11', text: '地心', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-xh-12', text: '翅膀', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-xh-13', text: '疼痛', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-xh-14', text: '降落在花丛', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-xh-15', text: '融化的霓虹', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-xh-16', text: '凝固', song: '猩红', category: '《猩红》', categoryId: 'album_xh' },
 
   // ==========================================
   // 第一级：2020前单曲
@@ -259,7 +296,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
 
   // 积极向下
   { id: 'pre-jjxx-1', text: '天大地大', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
-  { id: 'pre-jjxx-2', text: '嘉年华', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-2', text: '谁的嘉年华', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-3', text: '加速蒸发', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-4', text: '失重的', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-5', text: '宿醉', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
@@ -271,6 +308,10 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'pre-jjxx-11', text: '不羁', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-12', text: '年轻', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-13', text: '明天', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-14', text: '男孩女孩', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-15', text: '苹果', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-16', text: '浪费这盛夏', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-17', text: '心碎', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
 
   // ==========================================
   // 第一级：2020-2024单曲
@@ -282,6 +323,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-zask-4', text: '恐吓', song: '至暗时刻', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-zask-5', text: '萤火', song: '至暗时刻', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-zask-6', text: '腐朽的规则', song: '至暗时刻', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-zask-7', text: '因果', song: '至暗时刻', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // 逝去的海
   { id: 'mid-sqdh-1', text: '晚霞', song: '逝去的海', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
@@ -302,6 +344,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-syx-7', text: '降落', song: '芍药信', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-syx-8', text: '炙热', song: '芍药信', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-syx-9', text: '蒲公英', song: '芍药信', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-syx-10', text: '日记上的斑驳', song: '芍药信', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-syx-11', text: '星河', song: '芍药信', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-syx-12', text: '含羞的星河', song: '芍药信', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // 如梦
   { id: 'mid-rm-1', text: '流浪车厢', song: '如梦', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
@@ -334,6 +379,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-gm-8', text: '公路', song: '光芒', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-gm-9', text: '震荡', song: '光芒', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-gm-10', text: '妖冶', song: '光芒', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-gm-11', text: '光芒', song: '光芒', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-gm-12', text: '猩涩的月亮', song: '光芒', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-gm-13', text: '摇摇晃晃', song: '光芒', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // 春色悠悠不及你荡漾
   { id: 'mid-csyy-1', text: '肩膀', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
@@ -343,6 +391,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-csyy-5', text: '轻轻地唱', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-csyy-6', text: '香气', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-csyy-7', text: '炙热的双唇', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-csyy-8', text: '未知远方', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-csyy-9', text: '荡漾', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // 午夜爱未眠
   { id: 'mid-wyawm-1', text: '狂野', song: '午夜爱未眠', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
@@ -395,6 +445,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'post-mlc-9', text: '嚣张', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
   { id: 'post-mlc-10', text: '流淌', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
   { id: 'post-mlc-11', text: '天地', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
+  { id: 'post-mlc-12', text: '发烫', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
+  { id: 'post-mlc-13', text: '天地多宽广', song: '美力场', category: '2025后单曲', categoryId: 'singles_post2025' },
 ];
 
 export const PRESET_POEMS = [

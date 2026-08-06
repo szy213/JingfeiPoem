@@ -92,7 +92,7 @@ export const Header: React.FC<HeaderProps> = ({
     setIsPlaying(false);
   };
   return (
-    <header className="sticky top-0 z-30 bg-[#f2efea]/95 backdrop-blur-md border-b border-[#2d2a26]/15 px-2.5 py-2 sm:px-6">
+    <header className="sticky top-0 z-30 bg-[#f2efea]/95 backdrop-blur-md border-b border-[#2d2a26]/15 px-2.5 pb-2 sm:px-6" style={{ paddingTop: '25px' }}>
       <div className="max-w-md sm:max-w-4xl mx-auto flex items-center justify-between gap-2">
         
         {/* Brand / Editorial Header */}

@@ -248,7 +248,7 @@ export const CollageCanvas: React.FC<CollageCanvasProps> = ({
 
         {/* Primary Lyric Collage Playground Area */}
         <div
-          className={`min-h-[260px] sm:min-h-[320px] flex flex-wrap content-center items-center gap-x-2 relative z-10 py-2 transition-all ${
+          className={`min-h-[280px] sm:min-h-[340px] flex flex-wrap content-center items-center gap-x-2 relative z-10 py-2 transition-all ${
             lineCount <= 2
               ? 'gap-y-1 sm:gap-y-1.5'
               : lineCount <= 4

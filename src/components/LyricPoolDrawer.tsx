@@ -73,7 +73,7 @@ export const LyricPoolDrawer: React.FC<LyricPoolDrawerProps> = ({
   const activeCategoryObj = SONG_CATEGORIES.find((c) => c.id === currentCategory);
 
   return (
-    <div className="w-full max-w-md sm:max-w-4xl mx-auto bg-[#2d2a26] text-white border-t border-[#3d3832] rounded-t-xl shadow-[0_-10px_30px_rgba(0,0,0,0.5)] p-2.5 sm:p-4 flex flex-col gap-2 z-20 shrink-0">
+    <div className="w-full max-w-md sm:max-w-4xl mx-auto bg-[#2d2a26] text-white border-t border-[#3d3832] rounded-t-xl shadow-[0_-10px_30px_rgba(0,0,0,0.5)] p-2.5 sm:p-4 flex flex-col gap-2 z-20 shrink-0" style={{ paddingBottom: '50px' }}>
       
       {/* 7个随机词语条目展现区 (7 Random Words Bar) */}
       <div className="flex items-center justify-between gap-1.5 bg-[#22201d] p-2 rounded border border-white/10">
