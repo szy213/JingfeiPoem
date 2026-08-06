@@ -142,6 +142,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-hxjc-10', text: '反向的列车', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-hxjc-11', text: '红色头发', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-hxjc-12', text: '带我回家', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-hxjc-13', text: '命运的春风', song: '红霞剧场', category: '《猩红》', categoryId: 'album_xh' },
 
   // 北海
   { id: 'xh-bh-1', text: '绿树', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
@@ -285,6 +286,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'pre-shou-8', text: '一路流淌', song: '手', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-shou-9', text: '春光', song: '手', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-shou-10', text: '回望', song: '手', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-shou-11', text: '你手上风光', song: '手', category: '2020前单曲', categoryId: 'singles_pre2020' },
 
   // I found out too late
   { id: 'pre-ifotl-1', text: '九月', song: 'I found out too late', category: '2020前单曲', categoryId: 'singles_pre2020' },
