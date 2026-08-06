@@ -31,7 +31,7 @@ export const ROSE_PAPER_STYLES: PaperStyleConfig[] = [
     bgClass: 'bg-[#8c232b]',
     textClass: 'text-[#fce8eb]',
     borderClass: 'border border-[#a8323c] shadow-md',
-    fontFamily: 'playfair',
+    fontFamily: 'serif',
   },
   {
     id: 'gold-line',
@@ -90,7 +90,7 @@ export const LINEN_PAPER_STYLES: PaperStyleConfig[] = [
     bgClass: 'bg-[#634A3E]',
     textClass: 'text-[#FFF6E6]',
     borderClass: 'border border-[#4f3a30] shadow-sm',
-    fontFamily: 'playfair',
+    fontFamily: 'serif',
   },
   {
     id: 'letter-white',
