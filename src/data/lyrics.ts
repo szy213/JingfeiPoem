@@ -156,8 +156,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-bh-9', text: '直觉', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-bh-10', text: '小船儿', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-bh-11', text: '梦里的水乡', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-bh-11', text: '握不住的风', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-bh-11', text: '吻着阳光', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-12', text: '握不住的风', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-13', text: '吻着阳光', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
 
   // 沙漠一枝花
   { id: 'xh-smyzh-1', text: '社会的情趣', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
@@ -167,7 +167,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-smyzh-5', text: '暧昧', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-smyzh-6', text: '一朵花', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-smyzh-7', text: '沙漠', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-smyzh-7', text: '醉', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-smyzh-8', text: '醉', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
 
   // 春宵苦短，少女快前进！
   { id: 'xh-cxkd-1', text: '白兰地', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
@@ -195,8 +195,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-jsblr-10', text: '封锁', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-jsblr-11', text: '爱欲', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-jsblr-12', text: '惊心动魄', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-jsblr-12', text: '琴键', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-jsblr-12', text: '碾过银河', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-jsblr-13', text: '琴键', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-jsblr-14', text: '碾过银河', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
 
   // 演！演！演！
   { id: 'xh-yyy-1', text: '戏', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
