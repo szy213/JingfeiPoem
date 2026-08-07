@@ -89,6 +89,7 @@ export const LyricPoolDrawer: React.FC<LyricPoolDrawerProps> = ({
             displayWords.map((lyric) => (
               <button
                 key={lyric.id}
+                data-no-deselect="true"
                 onClick={() => onAddLyric(lyric)}
                 className={`px-2.5 py-1 bg-[#f2efea] text-[#2d2a26] font-serif-tc text-xs font-semibold border border-white/40 shadow-sm hover:bg-white hover:border-[#c2410c] hover:scale-[1.04] active:scale-95 transition-all duration-150 flex items-center gap-1 whitespace-nowrap ${
                   isFlipping ? 'opacity-40 scale-95 blur-[0.5px]' : 'opacity-100'
@@ -264,6 +265,7 @@ export const LyricPoolDrawer: React.FC<LyricPoolDrawerProps> = ({
                   {filteredModalLyrics.map((lyric) => (
                     <button
                       key={lyric.id}
+                      data-no-deselect="true"
                       onClick={() => onAddLyric(lyric)}
                       className="px-2.5 py-1 bg-[#f2efea] text-[#2d2a26] font-serif-tc text-xs font-semibold border border-white/40 shadow-sm hover:bg-white hover:border-[#c2410c] hover:scale-[1.04] active:scale-95 transition-all flex items-center gap-1 rounded-[2px]"
                     >
