@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, Music, Image as ImageIcon, HelpCircle, Play, Pause } from 'lucide-react';
 
 const songs = [
+  { title: '光芒', file: '/光芒.mp3' },
   { title: '猩红', file: '/猩红.mp3' },
   { title: '生活在别处', file: '/生活在别处.mp3' },
   { title: '积极向下', file: '/积极向下.mp3' },
@@ -34,9 +35,9 @@ export const Header: React.FC<HeaderProps> = ({
     const delay = Math.random() * 3000 + 1000; // 1–4 seconds
     const timer = setTimeout(() => {
       if (audioRef.current) {
-        audioRef.current.src = songs[2].file;
+        audioRef.current.src = songs[3].file;
         audioRef.current.play().then(() => {
-          setCurrentSongIndex(2);
+          setCurrentSongIndex(3);
           setIsPlaying(true);
         }).catch(() => {
           // Autoplay blocked by browser, keep default state

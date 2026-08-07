@@ -1,0 +1,17 @@
+{
+  "name": "JF·Poem",
+  "short_name": "JF·Poem",
+  "description": "陈婧霏歌词拼贴诗 | Vintage Lyric Collage Poetry",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121013",
+  "theme_color": "#121013",
+  "icons": [
+    {
+      "src": "/app.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ interface AudioPlayerModalProps {
 }
 
 const songs = [
+  { title: '光芒', file: '/光芒.mp3' },
   { title: '猩红', file: '/猩红.mp3' },
   { title: '生活在别处', file: '/生活在别处.mp3' },
   { title: '积极向下', file: '/积极向下.mp3' },
