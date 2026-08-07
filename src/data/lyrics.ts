@@ -156,6 +156,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-bh-9', text: '直觉', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-bh-10', text: '小船儿', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-bh-11', text: '梦里的水乡', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-11', text: '握不住的风', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-bh-11', text: '吻着阳光', song: '北海', category: '《猩红》', categoryId: 'album_xh' },
 
   // 沙漠一枝花
   { id: 'xh-smyzh-1', text: '社会的情趣', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
@@ -165,6 +167,7 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-smyzh-5', text: '暧昧', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-smyzh-6', text: '一朵花', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-smyzh-7', text: '沙漠', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-smyzh-7', text: '醉', song: '沙漠一枝花', category: '《猩红》', categoryId: 'album_xh' },
 
   // 春宵苦短，少女快前进！
   { id: 'xh-cxkd-1', text: '白兰地', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
@@ -176,7 +179,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-cxkd-7', text: '起伏的四季', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-cxkd-8', text: '蒸汽的陷阱', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-cxkd-9', text: '掉进', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
-  { id: 'xh-cxkd-10', text: '行李', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-cxkd-10', text: '装进行李', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-cxkd-11', text: '狂想曲', song: '春宵苦短，少女快前进！', category: '《猩红》', categoryId: 'album_xh' },
 
   // 禁色宝丽来
   { id: 'xh-jsblr-1', text: '崎岖', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
@@ -191,6 +195,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-jsblr-10', text: '封锁', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-jsblr-11', text: '爱欲', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-jsblr-12', text: '惊心动魄', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-jsblr-12', text: '琴键', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-jsblr-12', text: '碾过银河', song: '禁色宝丽来', category: '《猩红》', categoryId: 'album_xh' },
 
   // 演！演！演！
   { id: 'xh-yyy-1', text: '戏', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
@@ -204,6 +210,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-yyy-9', text: '戏', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-yyy-10', text: '性感', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-yyy-11', text: '悲观垫底', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-yyy-12', text: '伪命题', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-yyy-13', text: '肉皮', song: '演！演！演！', category: '《猩红》', categoryId: 'album_xh' },
 
   // 诸多夏日后天鹅死去
   { id: 'xh-zdxrh-1', text: '天鹅', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
@@ -213,6 +221,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'xh-zdxrh-5', text: '光', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-zdxrh-6', text: '闯入', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
   { id: 'xh-zdxrh-7', text: '上升的烟火', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-zdxrh-8', text: '自己的命运', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
+  { id: 'xh-zdxrh-9', text: '万丈深渊', song: '诸多夏日后天鹅死去', category: '《猩红》', categoryId: 'album_xh' },
 
   // 你是我最爱的褪色幻想
   { id: 'xh-tshx-1', text: '紫罗兰色的', song: '你是我最爱的褪色幻想', category: '《猩红》', categoryId: 'album_xh' },
@@ -269,6 +279,9 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'pre-bcxy-5', text: '守望', song: '别处的夕阳', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-bcxy-6', text: '夜风', song: '别处的夕阳', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-bcxy-7', text: '一整片夕阳', song: '别处的夕阳', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-bcxy-8', text: '小镇', song: '别处的夕阳', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-bcxy-9', text: '成为过往', song: '别处的夕阳', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-bcxy-10', text: '采一片月光', song: '别处的夕阳', category: '2020前单曲', categoryId: 'singles_pre2020' },
 
   // September lies
   { id: 'pre-sl-1', text: 'sweetest lullaby', song: 'September lies', category: '2020前单曲', categoryId: 'singles_pre2020' },
@@ -395,6 +408,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-csyy-7', text: '炙热的双唇', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-csyy-8', text: '未知远方', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-csyy-9', text: '荡漾', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-csyy-10', text: '最后一个愿望', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-csyy-11', text: '命中注定', song: '春色悠悠不及你荡漾', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // 午夜爱未眠
   { id: 'mid-wyawm-1', text: '狂野', song: '午夜爱未眠', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
@@ -410,6 +425,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'mid-tbzhx-5', text: '飞过', song: '她不再幻想', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-tbzhx-6', text: '当你说', song: '她不再幻想', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
   { id: 'mid-tbzhx-7', text: '旅途', song: '她不再幻想', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-tbzhx-8', text: '纵情欢畅', song: '她不再幻想', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
+  { id: 'mid-tbzhx-9', text: '荒诞游乐场', song: '她不再幻想', category: '2020-2024单曲', categoryId: 'singles_2020_2024' },
 
   // ==========================================
   // 第一级：2024后单曲
