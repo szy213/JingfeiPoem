@@ -102,6 +102,57 @@ export const LINEN_PAPER_STYLES: PaperStyleConfig[] = [
   },
 ];
 
+export const LIBERATION_PAPER_STYLES: PaperStyleConfig[] = [
+  {
+    id: 'fire-red',
+    name: '烈火红',
+    bgClass: 'bg-[#C82018]',
+    textClass: 'text-[#EBC59D]',
+    borderClass: 'border border-[#9E1410] shadow-sm',
+    fontFamily: 'playfair',
+  },
+  {
+    id: 'ocean-blue',
+    name: '海洋蓝',
+    bgClass: 'bg-[#05D1EF]',
+    textClass: 'text-[#191970]',
+    borderClass: 'border border-[#04A8C4] shadow-sm',
+    fontFamily: 'playfair',
+  },
+  {
+    id: 'gem-yellow',
+    name: '宝石黄',
+    bgClass: 'bg-[#EBC59D]',
+    textClass: 'text-[#3D1C0A]',
+    borderClass: 'border border-[#D4A56F] shadow-sm',
+    fontFamily: 'serif',
+  },
+  {
+    id: 'neon-pink',
+    name: '霓虹粉',
+    bgClass: 'bg-[#E738DC]',
+    textClass: 'text-[#7D2943]',
+    borderClass: 'border border-[#C020B8] shadow-sm',
+    fontFamily: 'playfair',
+  },
+  {
+    id: 'river-cyan',
+    name: '河流青',
+    bgClass: 'bg-[#B4C9DA]',
+    textClass: 'text-[#1A2A35]',
+    borderClass: 'border border-[#96B1C4] shadow-sm',
+    fontFamily: 'serif',
+  },
+  {
+    id: 'laser-green',
+    name: '镭射绿',
+    bgClass: 'bg-[#05A14F]',
+    textClass: 'text-[#3C4A1E]',
+    borderClass: 'border border-[#048240] shadow-sm',
+    fontFamily: 'serif',
+  },
+];
+
 export const KRAFT_PAPER_STYLES: PaperStyleConfig[] = [
   {
     id: 'orchid-purple',
@@ -149,6 +200,7 @@ export const PAPER_STYLES: PaperStyleConfig[] = [
   ...ROSE_PAPER_STYLES,
   ...LINEN_PAPER_STYLES,
   ...KRAFT_PAPER_STYLES,
+  ...LIBERATION_PAPER_STYLES,
 ];
 
 export function getPaperStylesForTheme(bgType: CanvasBgType): PaperStyleConfig[] {
@@ -157,6 +209,9 @@ export function getPaperStylesForTheme(bgType: CanvasBgType): PaperStyleConfig[]
   }
   if (bgType === 'kraft') {
     return KRAFT_PAPER_STYLES;
+  }
+  if (bgType === 'liberation') {
+    return LIBERATION_PAPER_STYLES;
   }
   return LINEN_PAPER_STYLES;
 }
@@ -185,5 +240,13 @@ export const CANVAS_BG_CONFIGS: Record<CanvasBgType, { name: string; bgClass: st
     textColor: 'text-[#28211b]',
     stampColor: 'text-[#aa2e2b]',
     stampBlend: 'mix-blend-multiply opacity-85',
+  },
+  'liberation': {
+    name: '解放光芒',
+    bgClass: 'bg-paper-liberation',
+    cardClass: 'border-[#3a3a3a]/40',
+    textColor: 'text-[#e0e0e0]',
+    stampColor: 'text-[#EBC59D]',
+    stampBlend: 'mix-blend-normal opacity-90',
   }
 };

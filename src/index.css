@@ -67,6 +67,13 @@
   color: #fce8eb;
 }
 
+.bg-paper-liberation {
+  background-color: #1a1a1e;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 20px 20px;
+  color: #e0e0e0;
+}
+
 .bg-paper-linen {
   background-color: #e8e2d8;
   background-image: repeating-linear-gradient(45deg, rgba(45,42,38,0.04) 0px, rgba(45,42,38,0.04) 2px, transparent 2px, transparent 4px);

@@ -4,7 +4,7 @@ import { PAPER_STYLES, CANVAS_BG_CONFIGS, getPaperStylesForTheme } from '../data
 import { toTraditional } from '../utils/toTraditional';
 import { Trash2, MoveLeft, MoveRight, Layers, Tag, Plus, Edit2, Check, Feather, Scissors, Quote, Pin, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const THEME_ORDER: CanvasBgType[] = ['rose', 'linen', 'kraft'];
+const THEME_ORDER: CanvasBgType[] = ['rose', 'linen', 'kraft', 'liberation'];
 
 interface CollageCanvasProps {
   items: CollageItem[];

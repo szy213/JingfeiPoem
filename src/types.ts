@@ -25,7 +25,13 @@ export type PaperStyleId =
   | 'rose-pink'      // 蔷薇粉
   | 'grass-green'    // 草木绿
   | 'linen-brown'    // 亚麻棕
-  | 'kraft-letter';  // 信纸白
+  | 'kraft-letter'   // 信纸白
+  | 'fire-red'       // 烈火红
+  | 'ocean-blue'     // 海洋蓝
+  | 'gem-yellow'     // 宝石黄
+  | 'neon-pink'      // 霓虹粉
+  | 'river-cyan'     // 河流青
+  | 'laser-green';   // 镭射绿
 
 export interface PaperStyleConfig {
   id: PaperStyleId;
@@ -58,7 +64,7 @@ export interface StickerItem {
   scale: number;
 }
 
-export type CanvasBgType = 'rose' | 'linen' | 'kraft';
+export type CanvasBgType = 'rose' | 'linen' | 'kraft' | 'liberation';
 
 export interface CanvasConfig {
   bgType: CanvasBgType;

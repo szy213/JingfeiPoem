@@ -17,6 +17,7 @@ const CONFETTI_COLORS: Record<CanvasBgType, string[]> = {
   rose: ['#c93c3c', '#d4af37', '#e8ded3', '#8c232b'],
   linen: ['#D8845E', '#A7BCB8', '#E0B279', '#F1D5C7'],
   kraft: ['#AB80AE', '#DE83AB', '#667D73', '#e5665d'],
+  liberation: ['#C82018', '#05D1EF', '#EBC59D', '#E738DC'],
 };
 
 const LOADING_STEPS = [
