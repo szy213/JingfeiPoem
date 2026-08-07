@@ -327,6 +327,8 @@ export const LYRICS_DATABASE: LyricItem[] = [
   { id: 'pre-jjxx-15', text: '苹果', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-16', text: '浪费这盛夏', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
   { id: 'pre-jjxx-17', text: '心碎', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-18', text: '不凋零的花', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
+  { id: 'pre-jjxx-19', text: '生命', song: '积极向下', category: '2020前单曲', categoryId: 'singles_pre2020' },
 
   // ==========================================
   // 第一级：2020-2024单曲
